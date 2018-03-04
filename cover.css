@@ -1,0 +1,343 @@
+*{
+        margin: 0%;
+        padding: 0%;
+}
+body {
+    background: #060b14;
+}
+.animated {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#container {
+    perspective: 50px;
+    -webkit-perspective: 50px;
+    -moz-perspective: 50px;
+    -ms-perspective: 50px;
+    transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    opacity: 0.55;
+}
+#welcome {
+    position: absolute;
+    width: 22rem;
+    left: 50%;
+    top: 45%;
+    margin-top: -1rem;
+    margin-left: -11rem;
+    font-weight: 200;
+    color: #fff;
+    opacity: 0.65;
+    text-align: center;
+    font-size: 1.65em;
+    line-height: 1.05rem;
+    letter-spacing: 0.135em;
+    word-spacing: -0.075rem;
+}
+.dot {
+    position: fixed;
+    width: 0.5rem;      /*  30px;   */
+    height: 0.5rem;     /*  30px;   */
+    border-radius: 50%;
+    background-color: #4bc2f1;
+}
+@keyframes slideInDown {
+    from {
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+.slideInDown {
+    animation-name: slideInDown;
+    animation-delay: 8.5s;
+    animation-duration: 3s;
+}
+h1{
+    /* background-color: rgb(64, 138, 138); */
+    font-weight: 100;
+    text-align: center;
+    font-size: 7rem;
+    background-blend-mode: color-burn;
+    font-family: 'Fredericka the Great',cursive;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.title{
+    /* background-color: bisque; */
+    display:  flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 28%;
+    top: 25%;
+    height: 30%;
+    border-radius: 10px;
+    animation-name: BLUE;
+    animation-delay: 9s;
+    animation-fill-mode: both;
+}
+@keyframes BLUE {
+    from{
+        color: #fff;
+        background-color: none;
+        opacity: 0.7;
+    }
+    to{
+        color: #4bc2f1;
+        opacity: 1;
+    }
+}
+@keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+.bounceInLeft {
+    animation-name: bounceInLeft;
+    animation-delay: 8s;
+    animation-duration: 0.6s;
+}
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1);
+        transform: translateZ()
+    }
+    20% {
+        transform: scale3d(1, 1, 1);
+    }
+    40% {
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+    80% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+.bounceIn {
+    animation-duration: 0.7s;
+    animation-delay: 8.5s;
+    animation-name: bounceIn;
+}
+.fa-times {
+    right: 1px;
+    top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.fa-times:hover {
+    opacity: 1;
+    color: #4bc2f1;
+}
+.sidebar_menu {
+    position: fixed;
+    width: 250px;
+    margin-left: -250px;
+    overflow: hidden;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: rgba(17, 17, 17, 0.9);
+    opacity: 0.9;
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
+}
+.show_menu {
+    margin-left: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.toggle_menu {
+    position: fixed;
+    padding: 15px 16px 15px 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: #4bc2f1;
+    opacity: 0.85;
+    z-index: 6;
+    font-size: 2em;
+    transition: all 0.2s ease-in-out;
+}
+.toggle_menu:hover {
+    background-color: #4bc2f1;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+.boxed_item {
+    font-family: 'Open Sans';
+    font-weight: 200;
+    padding: 10px 20px;
+    display: inline-block;
+    border: solid 2px white;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+}
+.logo_bold {
+    font-weight: 800;
+}
+.logo_title {
+    color: white;
+    font-family: 'Open Sans', cursive;
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    word-spacing: 0.3rem;
+}
+.navigation_section {
+    margin: 20px 0;
+    display: block;
+    width: 200px;
+    margin-left: 25px;
+}
+.navigation_item {
+    font-weight: 200;
+    font-family: 'Open Sans', cursive;
+    color: white;
+    padding: 12px 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #D8D8D8;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.navigation_item:hover {
+    color: #4bc2f1;
+    border-bottom: solid 1px #4bc2f1;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+}
+#time{
+    color: #4bc2f1;
+    position: absolute;
+    left: 85%;
+    bottom: 3%;
+    font-size: 2rem;
+}
+#startsIn{
+    position: absolute;
+    left: 85%;
+    bottom: 8%;
+    color: #4bc2f1;
+    font-size: 2rem;
+}
+.tag{
+    position: absolute;
+    left: 50%;
+    top: 50vh;
+    color: #4bc2f1;
+    font-size: 2rem;
+    font-family: 'Open Sans, 'Helvetica Neue', sans-serif;
+}
+.box1{
+    /* height: 20vh; */
+    width: 100vw;
+    padding: 2rem;
+    background-color: rgb(28, 28, 61);
+    font-family: open sans, Helvetica;
+    font-size: 3.2rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+
+}
+.boxes{
+    display: flex;
+    position: relative;
+}
+.box2{
+    height: 100vh;
+    width: 20vw;
+    background-color: rgb(211, 103, 63);
+    color: rgb(28, 28, 61);
+}
+.boxes:nth-child(odd){
+    animation: up 2s 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 460px) {
+    #welcome {
+        font-size: 0.75rem !important;
+    }
+    .dot {
+        width: 0.4rem;
+        height: 0.4rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .title{
+        margin-left: -18%;
+    }
+    #time, #startsIn, .tag {
+        font-size: 0.8rem;
+    }
+    #time, #startsIn{
+        left: 65%;
+    }
+}
