@@ -6,6 +6,13 @@ $(document).ready(function () {
     $(".toggle_menu").click(function () {
         $(".sidebar_menu").addClass("show_menu");
     });
+
+    $(".navigation_item").click(function(){
+        $(".sidebar_menu").removeClass("show_menu");
+    });
+    $("#about").click(function(){
+        document.getElementById(about).style.display = "block";
+    });
 });
 
  // Set the date we're counting down to
@@ -27,6 +34,6 @@ var x = setInterval(function () {
     // If the count down is finished, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = "Started";
     }
 }, 1000);
