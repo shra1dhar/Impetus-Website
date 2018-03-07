@@ -11,7 +11,7 @@ $(document).ready(function () {
         $(".sidebar_menu").removeClass("show_menu");
     });
     $("#about").click(function(){
-        document.getElementById(about).style.display = "block";
+        $(".about").css("display", "block");
     });
 });
 
