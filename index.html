@@ -69,12 +69,9 @@
 	</div>
 		<!-- TAGLINE -->
 		<div class="tag bounceInLeft animated">Automation: The Next Dimension</div>
-	
-	    <!-- TIMER -->
-	<div>
-		<p id="startsIn">Fest Starts in </p>
-		<p id="time"></p>
-	</div>
+
+		<!-- TIMER -->
+		<div class="countdown"></div>
 
 		<!-- ABOUT CONTENT -->
 	<div class="about">
@@ -181,7 +178,7 @@
 			if (window.location.hash) {
 				dotsCount = window.location.hash.slice(1);
 			} else {
-				dotsCount = isMobile ? (isAndroid ? 200 : 200) : (isChrome ? 500 : 200);    //dountsCount = isMobile ? (isAndroid ? 40 : 60) : (isChrome)
+				dotsCount = isMobile ? (isAndroid ? 150 : 150) : (isChrome ? 500 : 200);    //dountsCount = isMobile ? (isAndroid ? 40 : 60) : (isChrome)
 			}
 
 			for (var i = 0; i < dotsCount; i++) {

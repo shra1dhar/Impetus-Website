@@ -1,7 +1,7 @@
 *{
         margin: 0%;
         padding: 0%;
-    }
+}
 body {
     background: #060b14;
 }
@@ -257,7 +257,7 @@ h1{
     transition: all 0.4s ease-in-out;
     opacity: 1;
 }
-#time{
+/* #time{
     color: #4bc2f1;
     position: absolute;
     left: 85%;
@@ -270,6 +270,30 @@ h1{
     bottom: 8%;
     color: #4bc2f1;
     font-size: 2rem;
+} */
+.countdown {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: 38%;
+    bottom: 5%;
+}
+
+.countdown div {
+    padding: 15px;
+    border: 1px #4bc2f1 solid;
+    border-radius: 10px;
+    background: #4bc2f1;
+    opacity: 0.8;
+    margin: 5px;
+}
+
+.countdown span {
+    display: block;
+    font-size: 15px;
 }
 .tag{
     position: absolute;
@@ -291,20 +315,6 @@ h1{
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-    }
-}
-@keyframes flipY {
-    from {
-        transform: perspective(400px) rotateY(90deg);
-        animation-timing-function: ease-in;
-        transform-origin: 0% 50%;
-        opacity: 0;
-        }
-    to {
-        transform: perspective(400px);
-        transform: perspective(400px) rotateY(0deg);
-        opacity: 1;
-        animation-timing-function: ease-in;
     }
 }
 .box1 {
@@ -330,23 +340,8 @@ h1{
     width: 20vw;
     background-color: rgb(228, 135, 101);
     color: rgb(28, 28, 61);
-    /* backface-visibility: visible !important; */
 }
-/* .box2{
-        animation: flipY 0.6s ease-in 0s;
-}
-.box3 {
-    animation: flipY 0.6s ease-in 0.6s;
-}
-.box4 {
-    animation: flipY 0.6s ease-in 1.2s;
-}
-.box5 {
-    animation: flipY 0.6s ease-in 1.8s;
-}
-.box6 {
-    animation: flipY 0.6s ease-in  2.4s;
-} */
+
 @keyframes down{
     from{
         transform: translateY(100%);
@@ -436,11 +431,13 @@ h1{
 }
 .map{
     border: 2px solid rgb(5, 36, 71);
+    width: 100px !important;
 }
 .white{
     /* background-color: #fff;
     padding: 20px; */
-    margin-top: 30px;
+    margin-top: 50px;
+    margin: 50px;
 }
 .logo-img-reachus{
     max-width: 130px;
@@ -453,6 +450,47 @@ h1{
 
 }
 
+    /* GALLERY */
+.gallery-head{
+    color: #fff !important;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px;
+    letter-spacing: 0.4rem;
+}
+.line{
+    border-bottom: 2px solid #fff;  
+    margin: 0px 10vw;
+}
+.gallery-items {
+    display: flex;
+    justify-content: center;
+    margin: 40px 100px; 
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.items{
+    overflow: hidden;
+    position: relative;
+    border-radius: 2%;
+    margin: 5px;
+}
+.gal-items{
+    box-sizing: border-box !important;
+    /* box-shadow: #fff 3px 4px; */
+    border-radius: 6%;
+    filter: blur(0.7px);
+    max-width: 300px;
+    border: 1px solid #fff;
+    box-shadow: 5px 10px 8px rgba(255, 255, 255, 0.068);
+    transform: scale(1.6);
+    transition: all 0.5s linear;
+}
+.gal-items:hover{
+    transform: scale(1);
+    filter: blur(0px);
+}
 
 
 
@@ -463,8 +501,7 @@ h1{
 
 
 
-
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 430px) {
     #welcome {
         font-size: 0.75rem !important;
     }
@@ -478,11 +515,19 @@ h1{
     .title{
         margin-left: -18%;
     }
-    #time, #startsIn, .tag {
+    .tag {
         font-size: 0.8rem;
     }
-    #time, #startsIn{
-        left: 65%;
+    .countdown {
+        font-size: 20px;
+    }
+    .countdown {
+        position: absolute;
+        bottom: 2%;
+        left: 5%;
+    }
+    .countdown div {
+        margin: 2px;
     }
 
         /* ABOUT SECTION */
@@ -521,5 +566,22 @@ h1{
         font-size: 2rem;
         margin-left: -35px;
     }
-
+    .gallery-head {
+        font-size: 2rem;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        letter-spacing: 0.2rem;
+    }
+    .line {
+        margin-bottom: 20px;
+    }
+    .gallery-items {
+        display: flex;
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+    .gal-items {
+        margin: 5px;
+        box-shadow: 5px 10px 8px rgba(255, 255, 255, 0.068);
+    }
 }
