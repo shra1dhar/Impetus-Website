@@ -55,3 +55,62 @@ const intvl = setInterval(() => {
         countdown.innerHTML = 'Launched!';
     }
 }, 1000);
+
+
+    // Events
+$(".e-adjust").mouseover(function () {
+    $(".event-descrip").css("display", "block");
+});
+$(".e-adjust").mouseleave(function () {
+    $(".event-descrip").css("display", "none");
+});
+
+
+$("#ev1").click( function() {
+    $(".E1").removeClass("q");
+    $(".E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
+});
+$("#ev2").click(function () {
+    $(".E2").removeClass("q");
+    $(".E1, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
+});
+$("#ev3").click(function () {
+    $(".E3").removeClass("q");
+    $(".E1, .E2, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
+});
+$("#ev4").click(function () {
+    $(".E4").removeClass("q");
+    $(".E1, .E2, .E3, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
+});
+$("#ev5").click(function () {
+    $(".E5").removeClass("q");
+    $(".E1, .E2, .E3, .E4, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
+});
+$("#ev6").click(function () {
+    $(".E6").removeClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
+});
+$("#ev7").click(function () {
+    $(".E7").removeClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E8, .E9, .E10, .E11, .E12").addClass("q");
+});
+$("#ev8").click(function () {
+    $(".E8").removeClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E9, .E10, .E11, .E12").addClass("q");
+});
+$("#ev9").click(function () {
+    $(".E9").removeClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E10, .E11, .E12").addClass("q");
+});
+$("#ev10").click(function () {
+    $(".E10").removeClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E11, .E12").addClass("q");
+});
+$("#ev11").click(function () {
+    $(".E11").removeClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E12").addClass("q");
+});
+$("#ev12").click(function () {
+    $(".E12").removeClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11").addClass("q");
+});

@@ -57,41 +57,43 @@ a:link{
         opacity: 1;
     }
 }
-.slideInDown {
-    animation-name: slideInDown;
-    animation-delay: 8.5s;
-    animation-duration: 3s;
-}
-h1{
-    font-weight: 100;
-    text-align: center;
-    font-size: 7rem;
-    background-blend-mode: color-burn;
-    font-family: 'Fredericka the Great',cursive;
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.title{
-    display:  flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    left: 28%;
-    top: 25%;
-    height: 30%;
-    border-radius: 10px;
-    animation-name: BLUE;
-    animation-delay: 9s;
-    animation-fill-mode: both;
-}
 @keyframes BLUE {
-    from{
+    from {
         color: #fff;
         background-color: none;
         opacity: 0.7;
     }
-    to{
+    to {
         color: #4bc2f1;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes timer-down {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes smooth-effect {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
     }
 }
@@ -120,6 +122,34 @@ h1{
     to {
         transform: translate3d(0, 0, 0);
     }
+}
+.slideInDown {
+    animation-name: slideInDown;
+    animation-delay: 8.5s;
+    animation-duration: 3s;
+}
+h1{
+    font-weight: 100;
+    text-align: center;
+    font-size: 7rem;
+    background-blend-mode: color-burn;
+    font-family: 'Fredericka the Great',cursive;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.title{
+    display:  flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 28%;
+    top: 25%;
+    height: 30%;
+    border-radius: 10px;
+    animation-name: BLUE;
+    animation-delay: 7s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 .bounceInLeft {
     animation-name: bounceInLeft;
@@ -158,10 +188,10 @@ h1{
         transform: scale3d(1, 1, 1);
     }
 }
-.bounceIn {
-    animation-duration: 0.7s;
-    animation-delay: 8.5s;
-    animation-name: bounceIn;
+.title-effect {
+    animation-duration: 4s;
+    animation-delay: 7s;
+    animation-name: smooth-effect;
 }
 .fa-times {
     right: 1px;
@@ -278,17 +308,19 @@ h1{
     align-items: center;
     text-align: center;
     position: absolute;
-    left: 38%;
+    left: 37%;
     bottom: 5%;
+    animation: timer-down 2s ease-in 7s;
+    animation-fill-mode: both;
 }
 
 .countdown div {
-    padding: 15px;
+    padding: 15px 20px;
     border: 1px #4bc2f1 solid;
     border-radius: 10px;
     background: #4bc2f1;
     opacity: 0.8;
-    margin: 5px;
+    margin: 3px;
 }
 
 .countdown span {
@@ -306,17 +338,6 @@ h1{
 
 
     /****ABOUT-SECTION****/
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
 .box1 {
     /* height: 20vh; */
     width: 100vw;
@@ -383,14 +404,6 @@ h1{
 .logo-img{
     width: 300px;
     padding: 20px;
-}
-@keyframes smooth-effect{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 }
 #about-content{
     padding: 30px;
@@ -492,6 +505,75 @@ h1{
     filter: blur(0px);
 }
 
+          /* EVENTS */
+/* .event{
+    display:flex;
+    justify-content: baseline;
+} */
+.day1{
+    margin: 30px 50px;
+    float: left;
+    position: relative;
+}
+.day2 {
+    margin: 30px 50px;
+    float: right;
+    position: relative;
+}
+.day1 h2, .day2 h2 {
+    font-size: 3rem;
+    color: rgb(236, 202, 138);
+    font-family: 'Bungee Inline', cursive;
+    font-weight: 100;
+
+}
+.day1 ul li, .day2 ul li {
+    line-height: 3rem;
+    color: #fff;
+    list-style: none;
+    font-size: 2rem;
+    font-family: 'Allerta Stencil',sans-serif;
+}
+.day1 ul li:hover, .day2 ul li:hover {
+    color: rgb(5, 36, 71);
+    background-color: #fff;
+    cursor: pointer;
+}
+.day2 ul li, .day2 h2{
+    text-align: right;
+}
+
+.photo{
+    /* background-color: aquamarine; */
+}
+.e-adjust{
+    display: block;
+    margin: auto;
+    transform: scale(1.5);
+    padding-top: 120px;
+    z-index: 6;
+    box-sizing: border-box;
+    transition: all 1.2s ease;
+    will-change: contents;
+    max-height: 700px;
+}
+.event-descrip{
+    background-color: rgba(6, 11, 20, 0.137);
+    color: bisque;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    z-index: 6;
+    will-change: contents;
+    /* transition: all 1s ease; */
+}
+.e-adjust:hover{
+    transform: translate(0%, -15%);
+    width: 550px;
+    cursor: pointer;
+}
+.q{
+    display: none;
+}
 
 
 
@@ -512,6 +594,10 @@ h1{
     h1{
         font-size: 3rem;
     }
+    .toggle_menu {
+        padding: 15px 14px 15px 14px;
+        font-size: 1.2em;
+    }
     .title{
         margin-left: -18%;
     }
@@ -527,9 +613,13 @@ h1{
         left: 5%;
     }
     .countdown div {
-        margin: 2px;
+        margin: 1px;
+        padding: 10px 12px;
+        font-size: 24px;
     }
-
+    .countdown span {
+        font-size: 14px;
+    }
         /* ABOUT SECTION */
     .box1 {
         /* height: 20vh; */
@@ -584,4 +674,5 @@ h1{
         margin: 5px;
         box-shadow: 5px 10px 8px rgba(255, 255, 255, 0.068);
     }
+
 }
