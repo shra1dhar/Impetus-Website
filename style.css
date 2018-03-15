@@ -194,7 +194,7 @@ h1{
     animation-name: smooth-effect;
 }
 .fa-times {
-    right: 1px;
+    right: 3px;
     top: 10px;
     opacity: 0.7;
     cursor: pointer;
@@ -241,7 +241,7 @@ h1{
     opacity: 1;
 }
 .boxed_item {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 200;
     padding: 10px 20px;
     display: inline-block;
@@ -257,7 +257,7 @@ h1{
 }
 .logo_title {
     color: white;
-    font-family: 'Open Sans', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 200;
     font-size: 12px;
     text-align: center;
@@ -272,7 +272,7 @@ h1{
 }
 .navigation_item {
     font-weight: 200;
-    font-family: 'Open Sans', cursive;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     padding: 12px 0px;
     box-sizing: border-box;
@@ -280,6 +280,7 @@ h1{
     color: #D8D8D8;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    list-style: inside;
 }
 .navigation_item:hover {
     color: #4bc2f1;
@@ -543,9 +544,9 @@ h1{
     text-align: right;
 }
 
-.photo{
-    /* background-color: aquamarine; */
-}
+/* .photo{
+    background-color: aquamarine;
+} */
 .e-adjust{
     display: block;
     margin: auto;
@@ -573,6 +574,60 @@ h1{
 }
 .q{
     display: none;
+}
+
+        /* Sponsors */
+@keyframes text-anim {
+    0%{
+        transform: translateY(40vh);
+        color: rgb(5, 36, 71);
+        background-color: bisque;
+    }
+    99% {
+        color: rgb(5, 36, 71);
+        background-color: bisque;
+    }
+    100%{
+        transform: translateY(0vh);
+        color: bisque;
+        background-color: rgb(5, 36, 71);
+
+    }
+}
+/* @keyframes bg-anim{
+    from {
+        background-color:rgb(5, 36, 71);
+        visibility: hidden;
+    }
+    to {
+        color: bisque;
+        visibility: visible;
+    }
+} */
+.spon-head{
+    font-size: 3rem;
+    color: bisque;    
+    background-color: rgb(5, 36, 71);
+    text-align: center;
+    padding: 30px;
+    font-family: 'Josefin Slab', serif;
+    animation: text-anim 1.2s ease-out 1s;
+    animation-fill-mode: both;
+    z-index: 3;
+}
+.spon-logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: bisque;
+    justify-content: space-around;
+    align-content: center;
+    animation: smooth-effect 1.5s linear 2.2s;
+    animation-fill-mode: both;
+    z-index: 2;
+}
+.spon-items{
+    padding: 40px;
 }
 
 
@@ -620,6 +675,8 @@ h1{
     .countdown span {
         font-size: 14px;
     }
+
+
         /* ABOUT SECTION */
     .box1 {
         /* height: 20vh; */
@@ -675,4 +732,43 @@ h1{
         box-shadow: 5px 10px 8px rgba(255, 255, 255, 0.068);
     }
 
+        /* EVENTS */
+    .day1, .day2 {
+        margin: 0px;
+    }
+    .day1 h2, .day2 h2 {
+        font-size: 1.8rem;
+    }
+    .day1 ul li, .day2 ul li {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .e-adjust {
+        max-height: auto;
+        max-width: 250px;
+    }
+    .event-descrip {
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    /* .E1{
+        background-color: aquamarine !important;
+        padding-top: -60px !important;
+    } */
+
+    /* Sponsors */
+    .spon-head{
+        font-size: 1.5rem;
+    }
+    /* .spon-logos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: bisque;
+        justify-content: space-around;
+    } */
+    .spon-items {
+        padding: 10px;
+    }
 }
