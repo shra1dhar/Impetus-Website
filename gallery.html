@@ -21,7 +21,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    body {background-color: rgb(5, 36, 71)!important;}    
+    body {
+        animation: bg-color 1.5s linear 2s;
+        animation-fill-mode: both;
+    }    
 </style>
 <body>
     <!-- SIDEBAR -->
@@ -56,7 +59,7 @@
     <div>
         <h1 class = "gallery-head">Gallery</h1>
     </div>
-    <div class="line"></div>
+    <div class="line gal-anim-line"></div>
 
         <!-- Gallery items -->
     <div class="gallery-items">

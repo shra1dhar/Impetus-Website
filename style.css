@@ -4,6 +4,7 @@
 }
 body {
     background: #060b14;
+    
 }
 a:link{
     text-decoration: none;
@@ -46,6 +47,32 @@ a:link{
     border-radius: 50%;
     background-color: #4bc2f1;
 }
+
+/* Font Awesome */
+/* @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../webfonts/fa-regular-400.eot");
+    src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+.fa{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.fa-times:before {
+    content: "\f00d";
+    font-family: FontAwesome;
+}
+.fa-bars:before {
+    content: "\f0c9";
+    font-family: 
+} */
 @keyframes slideInDown {
     from {
         transform: translate3d(0, -100%, 0);
@@ -68,7 +95,26 @@ a:link{
         opacity: 1;
     }
 }
-
+@keyframes down {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes up {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -82,7 +128,7 @@ a:link{
 @keyframes timer-down {
     from {
         opacity: 0;
-        transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -15%, 0);
     }
     to {
         opacity: 1;
@@ -123,6 +169,76 @@ a:link{
         transform: translate3d(0, 0, 0);
     }
 }
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1);
+        transform: translateZ()
+    }
+    20% {
+        transform: scale3d(1, 1, 1);
+    }
+    40% {
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+    80% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes text-anim {
+    0% {
+        transform: translateY(40vh);
+        color: rgb(5, 36, 71);
+        background-color: bisque;
+    }
+    99% {
+        color: rgb(5, 36, 71);
+        background-color: bisque;
+    }
+    100% {
+        transform: translateY(0vh);
+        color: bisque;
+        background-color: rgb(5, 36, 71);
+    }
+}
+@keyframes rev-text-anim {
+    0% {
+        transform: translateY(40vh);
+        color: rgb(5, 36, 71);
+    }
+    99% {
+        color: rgb(5, 36, 71);
+    }
+    100% {
+        transform: translateY(0vh);
+        color: bisque
+    }
+}
+@keyframes bg-color {
+    from{
+        background-color: bisque;
+    }
+    to{
+        background-color: rgb(5, 36, 71);
+    }
+}
+
 .slideInDown {
     animation-name: slideInDown;
     animation-delay: 8.5s;
@@ -155,38 +271,6 @@ h1{
     animation-name: bounceInLeft;
     animation-delay: 8s;
     animation-duration: 0.6s;
-}
-@keyframes bounceIn {
-    from,
-    20%,
-    40%,
-    60%,
-    80%,
-    to {
-        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-    0% {
-        opacity: 0;
-        transform: scale3d(0.1, 0.1, 0.1);
-        transform: translateZ()
-    }
-    20% {
-        transform: scale3d(1, 1, 1);
-    }
-    40% {
-        transform: scale3d(1.5, 1.5, 1.5);
-    }
-    60% {
-        opacity: 1;
-        transform: scale3d(1, 1, 1);
-    }
-    80% {
-        transform: scale3d(0.9, 0.9, 0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale3d(1, 1, 1);
-    }
 }
 .title-effect {
     animation-duration: 4s;
@@ -314,7 +398,6 @@ h1{
     animation: timer-down 2s ease-in 7s;
     animation-fill-mode: both;
 }
-
 .countdown div {
     padding: 15px 20px;
     border: 1px #4bc2f1 solid;
@@ -323,7 +406,6 @@ h1{
     opacity: 0.8;
     margin: 3px;
 }
-
 .countdown span {
     display: block;
     font-size: 15px;
@@ -360,29 +442,8 @@ h1{
 .box2, .box3, .box4, .box5, .box6 {
     height: 150vh;
     width: 20vw;
-    background-color: rgb(228, 135, 101);
+    background-color: bisque;
     color: rgb(28, 28, 61);
-}
-
-@keyframes down{
-    from{
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-@keyframes up {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0%);
-        opacity: 1;
-    }
 }
 .box2, .box4, .box6{
     animation: down 1s linear;
@@ -416,6 +477,7 @@ h1{
     font-family: open sans, helvetica, arial;
     text-align: justify;
     color: rgb(28, 28, 61);
+    background-color: bisque;
 }
 #about-content h2{
     font-size: 2.5rem;
@@ -440,38 +502,86 @@ h1{
     color: rgb(5, 36, 71);
     text-align: center;
     padding: 40px;
-    background-color:rgb(228, 135, 101);
+    background-color:bisque;
     word-spacing: 0.7rem;
-}
-.map{
-    border: 2px solid rgb(5, 36, 71);
-    width: 100px !important;
 }
 .white{
     /* background-color: #fff;
     padding: 20px; */
     margin-top: 50px;
-    margin: 50px;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.logo-img-reachus{
-    max-width: 130px;
+.map{
+    box-sizing: border-box;
+}
+.contact-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* background-color: aquamarine; */
+    padding: 20px 0px;
+    max-width: 790px;
+    max-height: 400px;
+}
+.contact-pic{
+    padding: 10px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.cp{
+    box-sizing: border-box;
+    border: 1px solid rgb(5, 36, 71);
+    border-radius: 100%;
+    max-width: 100px;
+    max-height: 100px;
+}
+.contact-info{
+    display: block;
     float: right;
-    margin-top: -90px;
-    margin-right: -20px;
+    padding: 10px;
+    margin-top: 15px;
+    color: rgb(5, 36, 71);
 }
-.logo-pos{
-    background-color: aliceblue;
-
+.wrapper{
+    background-color: bisque;
+    margin: 5px 20px;
+    padding: 20px;
+    width: 310px;
+}
+.wrapper p{
+    line-height: 1.8rem;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.social-icons .fab{
+        color: bisque;
+        font-size: 2rem;
+        opacity: 0.7;
+        padding: 1.8rem;
+        transition-delay: 100ms;
+}
+.social-icons .fab:hover{
+    opacity: 1;
 }
 
     /* GALLERY */
 .gallery-head{
-    color: #fff !important;
+    color: bisque;
     font-family: 'Dancing Script', cursive;
     text-align: center;
     font-size: 3rem;
     padding: 30px;
     letter-spacing: 0.4rem;
+    animation: rev-text-anim 1.2s ease-out 1s;
+    animation-fill-mode: both;
 }
 .line{
     border-bottom: 2px solid #fff;  
@@ -483,6 +593,7 @@ h1{
     margin: 40px 100px; 
     flex-wrap: wrap;
     overflow: hidden;
+    will-change: contents;
 }
 .items{
     overflow: hidden;
@@ -500,6 +611,12 @@ h1{
     box-shadow: 5px 10px 8px rgba(255, 255, 255, 0.068);
     transform: scale(1.6);
     transition: all 0.5s linear;
+    animation: smooth-effect 1.5s linear 2.2s;
+    animation-fill-mode: both;
+}
+.gal-anim-line{
+    animation: smooth-effect 1.5s linear 2.2s;
+    animation-fill-mode: both;
 }
 .gal-items:hover{
     transform: scale(1);
@@ -559,10 +676,9 @@ h1{
     max-height: 700px;
 }
 .event-descrip{
-    background-color: rgba(6, 11, 20, 0.137);
     color: bisque;
-    line-height: 3rem;
-    font-size: 1.5rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
     z-index: 6;
     will-change: contents;
     /* transition: all 1s ease; */
@@ -577,33 +693,6 @@ h1{
 }
 
         /* Sponsors */
-@keyframes text-anim {
-    0%{
-        transform: translateY(40vh);
-        color: rgb(5, 36, 71);
-        background-color: bisque;
-    }
-    99% {
-        color: rgb(5, 36, 71);
-        background-color: bisque;
-    }
-    100%{
-        transform: translateY(0vh);
-        color: bisque;
-        background-color: rgb(5, 36, 71);
-
-    }
-}
-/* @keyframes bg-anim{
-    from {
-        background-color:rgb(5, 36, 71);
-        visibility: hidden;
-    }
-    to {
-        color: bisque;
-        visibility: visible;
-    }
-} */
 .spon-head{
     font-size: 3rem;
     color: bisque;    
@@ -677,19 +766,51 @@ h1{
     }
 
 
+        /* Reach Us Section */
+.reachus-head {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: bisque;
+    word-spacing: 0.5rem;
+    font-family: 'Kaushan Script', 'Open Sans' cursive;
+
+}
+.white{
+    box-sizing: border-box;
+    margin: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.social-icons {
+    margin-top: 0px;
+}
+.map{
+    transform: scale(0.6);
+    margin-top: -85px;
+    margin-bottom: -100px;
+}
+.wrapper {
+    margin: 2px 20px;
+    padding: 20px 25px;;
+    width: 100vw;
+    box-sizing: border-box;
+}
+.social-icons .fab {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
         /* ABOUT SECTION */
     .box1 {
-        /* height: 20vh; */
         width: 100vw;
         padding: 2rem;
         background-color: rgb(28, 28, 61);
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     .box2, .box3, .box4, .box5, .box6 {
         height: 150vh;
         width: 20vw;
-        /* backface-visibility: visible !important; */
     }
     .logo-img {
         width: 80px;
@@ -701,12 +822,12 @@ h1{
      #about-content p {    /*  added here */
         font-size: 0.8rem;
         font-family: open sans, helvetica, arial;
-        background-color: rgb(228, 135, 101);
+        background-color: bisque;
         margin-top: -35px;  
         padding: 6px;
     }
     #about-content h2 {     /*  added here */
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     .box1 p{
@@ -748,14 +869,12 @@ h1{
         max-width: 250px;
     }
     .event-descrip {
-        line-height: 1.5rem;
-        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-size: 0.7rem;
         padding: 10px;
+        margin-top: 20px;
     }
-    /* .E1{
-        background-color: aquamarine !important;
-        padding-top: -60px !important;
-    } */
+
 
     /* Sponsors */
     .spon-head{
