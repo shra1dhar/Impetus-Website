@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    body{    background-color: rgb(16, 32, 61) !important; }
+    body{    background-color: rgb(16, 32, 61) !important;
+            overflow-x: hidden; }
 </style>
 <body>
     <!-- SIDEBAR -->
@@ -42,7 +43,7 @@
 
             <ul class="navigation_section">
                 <a href="index.html">
-                    <li class="navigation_item" id="home">HOME</li>
+                    <li class="navigation_item" id="home">Home</li>
                 </a>
                 <a href="#">
                     <li class="navigation_item" id="about">About</li>
@@ -70,38 +71,41 @@
 
     <!-- Events -->
     <div class = "event">
+        <div class = "D-head">
+            <div class="d1"><h2><em>Day 1</em></h2></div>
+            <div class ="d2"><h2><em>Day 2</em></h2></div>
+        </div>
+
         <div class="day1">
-            <h2><em>Day 1</em></h2>
-            <ul>
-                <li id ="ev1">Steal Jobs</li>
-                <li id ="ev2">IT Wiz 2.0</li>
-                <li id ="ev3">Tech Charades</li>
-                <li id ="ev4">Vaaksamara</li>
-                <li id ="ev5">Tech Mark</li>
-                <li id ="ev6">Automania</li>
-                <li id ="ev7">Electrophilia</li>
-                <li id ="ev8">Spektrom</li>
-                <li id ="ev9">So you think its over</li>
-                <li id ="ev10">Appathon</li>
-                <li id ="ev11">Sumo Wars</li>
-                <li id ="ev12">Gaming</li>
+            <ul id = "day1">
+                <div><li id ="ev1">Steal Jobs</li></div>
+                <div><li id ="ev2">IT Wiz 2.0</li></div>
+                <div><li id ="ev3">Tech Charades</li></div>
+                <div><li id ="ev4">Vaaksamara</li></div>
+                <div><li id ="ev5">Tech Mark</li></div>
+                <div><li id ="ev6">Automania</li></div>
+                <div><li id ="ev7">Electrophilia</li></div>
+                <div><li id ="ev8">Spektrom</li></div>
+                <div><li id ="ev9">So you think its over</li></div>
+                <div><li id ="ev10">Appathon</li></div>
+                <div><li id ="ev11">Sumo Wars</li></div>
+                <div><li id ="ev12">Gaming</li></div>
             </ul>
         </div>
         <div class="day2">
-            <h2><em>Day 2</em></h2>
-            <ul>
-                <li id="eev1">Cyborg</li>
-                <li id="eev2">Neutral Oxide</li>
-                <li id="eev3">Summit</li>
-                <li id="eev4">Code Storm</li>
-                <li id="eev5">Enigma</li>
-                <li id="eev6">Marvel Mania</li>
-                <li id="eev7">Robo Soccer</li>
-                <li id="eev8">Mech and Break</li>
-                <li id="eev9">Laser Tag</li>
-                <li id="eev10">Automania</li>
-                <li id="eev11">Steal jobs</li>
-                <li id="eev12">Gaming</li>
+            <ul id = "day2">
+                <div><li id="eev1">Cyborg</li></div>
+                <div><li id="eev2">Neutral Oxide</li></div>
+                <div><li id="eev3">Summit</li></div>
+                <div><li id="eev4">Code Storm</li></div>
+                <div><li id="eev5">Enigma</li></div>
+                <div><li id="eev6">Marvel Mania</li></div>
+                <div><li id="eev7">Robo Soccer</li></div>
+                <div><li id="eev8">Mech and Break</li></div>
+                <div><li id="eev9">Laser Tag</li></div>
+                <div><li id="eev10">Automania</li></div>
+                <div><li id="eev11">Steal jobs</li></div>
+                <div><li id="eev12">Gaming</li></div>
             </ul>
         </div>
 
@@ -183,7 +187,7 @@
                 <p><Strong>Round 1: </Strong>It is an elimination round where a crossword will be given and the teams will have to fill that.</p>
                 <p>Only 8 teams will be sekected for the next round.</p>
                 <p>Before the round starts, the teams will be given a problem statement acc. to which they have to go ahead.</p>
-                <p><strong>Round 2: </strong>In this round the teams will be given a Boolean expression and they  have to solve it. In the end they will get a simple equation which will lead to a 
+                <p><strong>Round 2: </strong>In this round the teams will be given a Boolean expression and they  have to solve it. In the end they will get a simple equation which will lead to a
                 place and this marks the beginning of the treasure hunt. At the end all the teams will have components to rig up the circuit.</p>
                 <p><strong>Round 3: </strong>The teams have to rig up circuits according to the problem statement given and in the end they have to explain how they did that and the
                  winner will be announced.</p>
@@ -267,7 +271,7 @@
                 <p><strong>Round 3: </strong>AirCrash - The teams will be given noticeable personalities. All these famous figures will be in an airplane that is about to crash, the task is to convince the pilot(judge) why they should be given the only parachute available.</p>
             </div>
         </div>
-        
+
         <div class="q EE2">
             <div class="photo">
                 <img src="img/event-img/IIMG2.jpg" class="e-adjust" alt="Event Images will load here">
@@ -276,7 +280,7 @@
                 <p>Contact organizer for description.</p>
             </div>
         </div>
-        
+
         <div class="q EE3">
             <div class="photo">
                 <img src="img/event-img/IIMG3.jpg" class="e-adjust" alt="Event Images will load here">
@@ -301,7 +305,7 @@
                     <strong>Round 2: </strong>Problem solving on an oniine platform.</p>
             </div>
         </div>
-        
+
         <div class="q EE5">
             <div class="photo">
                 <img src="img/event-img/IIMG5.jpg" class="e-adjust" alt="Event Images will load here">
@@ -310,7 +314,7 @@
                 <p>Enigma is a treasurehunt event brought about with the aid of an android application. The players need to install the app, decode the hints and go to a specific location in the college campus, and scan the corresponding QRcode to move on.</p>
             </div>
         </div>
-        
+
         <div class="q EE6">
             <div class="photo">
                 <img src="img/event-img/IIMG6.jpg" class="e-adjust" alt="Event Images will load here">
@@ -324,7 +328,7 @@
                 <p>The participants should support their characters by debating against the opposite team. The character that they should support are chosen by picking a card randomly.</p>
             </div>
         </div>
-        
+
         <div class="q EE7">
             <div class="photo">
                 <img src="img/event-img/IIMG7.jpg" class="e-adjust" alt="Event Images will load here">
@@ -333,7 +337,7 @@
                 <p>The game consists of two teams of robots playing soccer against each other. Each team has two wireless robots. The game will consist of two halves with 5 minutes each. Ball will be placed at the centre of the arena at the starting of the match. In case of tie, 2 min extra time will be given. The team to score first goal during extra time will win the match. During penalty shoots, only one bot will be placed in the arena and ball will be placed at the centre of the arena.</p>
             </div>
         </div>
-        
+
         <div class="q EE8">
             <div class="photo">
                 <img src="img/event-img/IIMG8.jpg" class="e-adjust" alt="Event Images will load here">
@@ -342,7 +346,7 @@
                 <p>Each team has the task to disassemble and reassemble specified parts ofa Go-kart with the help of tools provided. The team that takes least time wins.</p>
             </div>
         </div>
-        
+
         <div class="q EE9">
             <div class="photo">
                 <img src="img/event-img/IIMG9.jpg" class="e-adjust" alt="Event Images will load here">
@@ -353,7 +357,7 @@
                 will have to form teams and compete against other teams. The team with the most number of "kills" wins.</p>
             </div>
         </div>
-        
+
         <div class="q EE10">
             <div class="photo">
                 <img src="img/event-img/IMG6.jpg" class="e-adjust" alt="Event Images will load here">
@@ -368,14 +372,11 @@
             <p><strong>Round 3: </strong>It is a rapid fire question on automation and automobiles.</p>
             </div>
         </div>
-        
+
         <div class="q EE11">
             <div class="photo">
-                <img src="img/event-img/IMG1.jpg" class="e-adjust" alt="Event Images will load here"> 
-                <!-- image repeated for automainia -->
-            </div>
-            <div class="photo">
                 <img src="img/event-img/IMG1.jpg" class="e-adjust" alt="Event Images will load here">
+                <!-- image repeated for automainia -->
             </div>
             <div class="event-descrip">
                 <p>This is a tailor made event for anyone who would like to taste the process of graduate stepping into the corporate world.</p>
@@ -383,7 +384,7 @@
                 <p>Find out for yourself in this simulation of a college placement drive.</p>
             </div>
         </div>
-        
+
         <div class="q EE12">
             <div class="photo">
                 <img src="img/event-img/IMG12.jpg" class="e-adjust" alt="Event Images will load here">
@@ -393,7 +394,7 @@
                 <p>See for yourself!</p>
             </div>
         </div>
-    </div>  
+    </div>
 
 
 

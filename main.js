@@ -64,7 +64,23 @@ $(".e-adjust").mouseover(function () {
 $(".e-adjust").mouseleave(function () {
     $(".event-descrip").css("display", "none");
 });
-
+$(document).ready(function () {
+    var isMobile = window.matchMedia("only screen and (max-width: 420px)");
+    if (isMobile.matches) {
+        $(".d1").click(() => {
+            $(".day2").css("display", "none");
+            $(".day1").css("display", "block");
+            $(".d1").css("text-decoration", "underline");
+            $(".d2").css("text-decoration", "none");
+        });
+        $(".d2").click(() => {
+            $(".day1").css("display", "none");
+            $(".day2").css("display", "block");
+            $(".d2").css("text-decoration", "underline");
+            $(".d1").css("text-decoration", "none");
+        });
+    }
+});
 // Day 1
 $("#ev1").click( function() {
     $(".E1").removeClass("q");
@@ -132,22 +148,22 @@ $("#ev12").click(function () {
 $("#eev1").click(function () {
     $(".EE1").removeClass("q");
     $(".EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
-        $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");
+        $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
 });
 $("#eev2").click(function () {
     $(".EE2").removeClass("q");
     $(".EE1, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");    
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");    
 });
 $("#eev3").click(function () {
     $(".EE3").removeClass("q");
     $(".EE1, .EE2, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
 });
 $("#eev4").click(function () {
     $(".EE4").removeClass("q");
     $(".EE1, .EE2, .EE3, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
 });
 $("#eev5").click(function () {
     $(".EE5").removeClass("q");
@@ -157,35 +173,36 @@ $("#eev5").click(function () {
 $("#eev6").click(function () {
     $(".EE6").removeClass("q");
     $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
 });
 $("#eev7").click(function () {
     $(".EE7").removeClass("q");
     $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
     });
 $("#eev8").click(function () {
     $(".EE8").removeClass("q");
     $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE9, .EE10, .EE11, .EE12").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
 });
 $("#eev9").click(function () {
     $(".EE9").removeClass("q");
     $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE10, .EE11, .EE12").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
 });
 $("#eev10").click(function () {
     $(".EE10").removeClass("q");
     $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE11, .EE12").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
 });
 $("#eev11").click(function () {
     $(".EE11").removeClass("q");
     $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE12").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
 });
 $("#eev12").click(function () {
     $(".EE12").removeClass("q");
     $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, E12").addClass("q");
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
 });
+

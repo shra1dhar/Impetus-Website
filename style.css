@@ -4,7 +4,6 @@
 }
 body {
     background: #060b14;
-    
 }
 a:link{
     text-decoration: none;
@@ -42,8 +41,8 @@ a:link{
 }
 .dot {
     position: fixed;
-    width: 0.5rem;      /*  30px;   */
-    height: 0.5rem;     /*  30px;   */
+    width: 0.6rem;      /*  30px;   */
+    height: 0.6rem;     /*  30px;   */
     border-radius: 50%;
     background-color: #4bc2f1;
 }
@@ -71,7 +70,7 @@ a:link{
 }
 .fa-bars:before {
     content: "\f0c9";
-    font-family: 
+    font-family:
 } */
 @keyframes slideInDown {
     from {
@@ -238,7 +237,6 @@ a:link{
         background-color: rgb(5, 36, 71);
     }
 }
-
 .slideInDown {
     animation-name: slideInDown;
     animation-delay: 8.5s;
@@ -249,7 +247,7 @@ h1{
     text-align: center;
     font-size: 7rem;
     background-blend-mode: color-burn;
-    font-family: 'Fredericka the Great',cursive;
+    font-family: 'Fredericka the Great', cursive;
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .title{
@@ -262,9 +260,7 @@ h1{
     top: 25%;
     height: 30%;
     border-radius: 10px;
-    animation-name: BLUE;
-    animation-delay: 7s;
-    animation-duration: 2s;
+    animation: BLUE 7s ease-in 2s;
     animation-fill-mode: both;
 }
 .bounceInLeft {
@@ -273,9 +269,8 @@ h1{
     animation-duration: 0.6s;
 }
 .title-effect {
-    animation-duration: 4s;
-    animation-delay: 7s;
-    animation-name: smooth-effect;
+    animation: smooth-effect 4s ease-in 7s;
+    animation-fill-mode: both;
 }
 .fa-times {
     right: 3px;
@@ -372,20 +367,6 @@ h1{
     transition: all 0.4s ease-in-out;
     opacity: 1;
 }
-/* #time{
-    color: #4bc2f1;
-    position: absolute;
-    left: 85%;
-    bottom: 3%;
-    font-size: 2rem;
-}
-#startsIn{
-    position: absolute;
-    left: 85%;
-    bottom: 8%;
-    color: #4bc2f1;
-    font-size: 2rem;
-} */
 .countdown {
     font-size: 30px;
     display: flex;
@@ -422,14 +403,14 @@ h1{
 
     /****ABOUT-SECTION****/
 .box1 {
-    /* height: 20vh; */
     width: 100vw;
     padding: 2rem;
     background-color: rgb(28, 28, 61);
-    font-family: open sans, Helvetica;
+    font-family: 'Kaushan Script', 'Open Sans', cursive;
+    font-weight: 100;
     font-size: 3.2rem;
     text-align: center;
-    color: #fff;
+    color: bisque;
     position: relative;
     will-change: auto;
     animation: fadeInDown 1s ease-in;
@@ -451,7 +432,7 @@ h1{
 }
 .box3, .box5{
     animation: up 1s linear;
-    animation-fill-mode: both;    
+    animation-fill-mode: both;
 }
 .about-logo{
     border-radius: 50%;
@@ -483,7 +464,6 @@ h1{
     font-size: 2.5rem;
     text-align: center;
     color: rgb(28, 28, 61);
-
 }
 .about-text{
     position: absolute;
@@ -499,6 +479,7 @@ h1{
     /* Reach Us Section */
 .reachus-head{
     font-size: 3rem;
+    font-family: 'Kaushan Script', 'Open Sans', cursive;
     color: rgb(5, 36, 71);
     text-align: center;
     padding: 40px;
@@ -506,8 +487,6 @@ h1{
     word-spacing: 0.7rem;
 }
 .white{
-    /* background-color: #fff;
-    padding: 20px; */
     margin-top: 50px;
     padding: 10px 100px;
     display: flex;
@@ -521,7 +500,6 @@ h1{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* background-color: aquamarine; */
     padding: 20px 0px;
     max-width: 790px;
     max-height: 400px;
@@ -575,7 +553,7 @@ h1{
     /* GALLERY */
 .gallery-head{
     color: bisque;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Kaushan Script', 'Open Sans', cursive;
     text-align: center;
     font-size: 3rem;
     padding: 30px;
@@ -584,13 +562,13 @@ h1{
     animation-fill-mode: both;
 }
 .line{
-    border-bottom: 2px solid #fff;  
+    border-bottom: 2px solid #fff;
     margin: 0px 10vw;
 }
 .gallery-items {
     display: flex;
     justify-content: center;
-    margin: 40px 100px; 
+    margin: 40px 100px;
     flex-wrap: wrap;
     overflow: hidden;
     will-change: contents;
@@ -605,7 +583,6 @@ h1{
     box-sizing: border-box !important;
     /* box-shadow: #fff 3px 4px; */
     border-radius: 6%;
-    filter: blur(0.7px);
     max-width: 300px;
     border: 1px solid #fff;
     box-shadow: 5px 10px 8px rgba(255, 255, 255, 0.068);
@@ -620,14 +597,9 @@ h1{
 }
 .gal-items:hover{
     transform: scale(1);
-    filter: blur(0px);
 }
 
           /* EVENTS */
-/* .event{
-    display:flex;
-    justify-content: baseline;
-} */
 .day1{
     margin: 30px 50px;
     float: left;
@@ -638,37 +610,40 @@ h1{
     float: right;
     position: relative;
 }
-.day1 h2, .day2 h2 {
+.D-head{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 10px;
+    margin-bottom: -10px;
+    box-sizing: border-box;
+}
+.d1 h2, .d2 h2 {
     font-size: 3rem;
     color: rgb(236, 202, 138);
     font-family: 'Bungee Inline', cursive;
     font-weight: 100;
-
+    padding: 2px 40px;
 }
 .day1 ul li, .day2 ul li {
     line-height: 3rem;
     color: #fff;
     list-style: none;
     font-size: 2rem;
-    font-family: 'Allerta Stencil',sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
 }
 .day1 ul li:hover, .day2 ul li:hover {
-    color: rgb(5, 36, 71);
-    background-color: #fff;
-    cursor: pointer;
+    text-decoration: underline;
 }
 .day2 ul li, .day2 h2{
     text-align: right;
 }
-
-/* .photo{
-    background-color: aquamarine;
-} */
 .e-adjust{
     display: block;
     margin: auto;
-    transform: scale(1.5);
-    padding-top: 120px;
+    /* margin-top: -100px; */
+    /* padding-top: 120px; */
     z-index: 6;
     box-sizing: border-box;
     transition: all 1.2s ease;
@@ -677,17 +652,17 @@ h1{
 }
 .event-descrip{
     color: bisque;
-    line-height: 2rem;
+    line-height: 2.2rem;
     font-size: 1.2rem;
-    z-index: 6;
+    z-index: 5;
     will-change: contents;
-    /* transition: all 1s ease; */
+    margin-top: 40px;
 }
-.e-adjust:hover{
+/* .e-adjust:hover{
     transform: translate(0%, -15%);
     width: 550px;
     cursor: pointer;
-}
+} */
 .q{
     display: none;
 }
@@ -695,14 +670,15 @@ h1{
         /* Sponsors */
 .spon-head{
     font-size: 3rem;
-    color: bisque;    
+    color: bisque;
     background-color: rgb(5, 36, 71);
     text-align: center;
-    padding: 30px;
-    font-family: 'Josefin Slab', serif;
+    padding: 26px;
+    font-family: 'Kaushan Script', 'Open Sans', cursive;
     animation: text-anim 1.2s ease-out 1s;
     animation-fill-mode: both;
     z-index: 3;
+    font-weight: 200;
 }
 .spon-logos{
     display: flex;
@@ -716,7 +692,10 @@ h1{
     z-index: 2;
 }
 .spon-items{
-    padding: 40px;
+    margin: 35px;
+}
+.spon-wrap{
+    align-self: center;
 }
 
 
@@ -767,38 +746,36 @@ h1{
 
 
         /* Reach Us Section */
-.reachus-head {
-    font-size: 1.5rem;
-    padding: 20px;
-    background-color: bisque;
-    word-spacing: 0.5rem;
-    font-family: 'Kaushan Script', 'Open Sans' cursive;
-
-}
-.white{
-    box-sizing: border-box;
-    margin: 0px;
-    width: 100vw;
-    overflow-x: hidden;
-}
-.social-icons {
-    margin-top: 0px;
-}
-.map{
-    transform: scale(0.6);
-    margin-top: -85px;
-    margin-bottom: -100px;
-}
-.wrapper {
-    margin: 2px 20px;
-    padding: 20px 25px;;
-    width: 100vw;
-    box-sizing: border-box;
-}
-.social-icons .fab {
-    font-size: 1.5rem;
-    padding: 1rem 1.5rem;
-}
+    .reachus-head {
+        font-size: 1.5rem;
+        padding: 20px;
+        background-color: bisque;
+        word-spacing: 0.5rem;
+    }
+    .white{
+        box-sizing: border-box;
+        margin: 0px;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .social-icons {
+        margin-top: 0px;
+    }
+    .map{
+        transform: scale(0.6);
+        margin-top: -85px;
+        margin-bottom: -100px;
+    }
+    .wrapper {
+        margin: 2px 20px;
+        padding: 20px 25px;;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    .social-icons .fab {
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+    }
 
         /* ABOUT SECTION */
     .box1 {
@@ -817,13 +794,13 @@ h1{
         padding: 5px;
     }
     #about-content {
-        padding: 0px;       
+        padding: 0px;
     }
      #about-content p {    /*  added here */
         font-size: 0.8rem;
         font-family: open sans, helvetica, arial;
         background-color: bisque;
-        margin-top: -35px;  
+        margin-top: -35px;
         padding: 6px;
     }
     #about-content h2 {     /*  added here */
@@ -844,29 +821,36 @@ h1{
         margin-bottom: 20px;
     }
     .gallery-items {
-        display: flex;
         margin: 0px;
         flex-wrap: wrap;
     }
     .gal-items {
         margin: 5px;
-        box-shadow: 5px 10px 8px rgba(255, 255, 255, 0.068);
     }
 
         /* EVENTS */
     .day1, .day2 {
-        margin: 0px;
+        width: 100vw;
+        margin:0px;
     }
-    .day1 h2, .day2 h2 {
+    .D-head{
+        padding-top: 20px;
+    }
+    .d1 h2, .d2 h2 {
         font-size: 1.8rem;
+        text-align: center;
+        padding: 15px;
+    }
+    .d1 h2:hover, .d2 h2:hover {
+        text-decoration: underline;
+    }
+    .d1{
+        text-decoration: underline;
+        color: rgb(236, 202, 138);
     }
     .day1 ul li, .day2 ul li {
         line-height: 2rem;
         font-size: 1rem;
-    }
-    .e-adjust {
-        max-height: auto;
-        max-width: 250px;
     }
     .event-descrip {
         line-height: 1.2rem;
@@ -874,20 +858,41 @@ h1{
         padding: 10px;
         margin-top: 20px;
     }
+    .day2{
+        display: none;
+    }
+    #day2{
+        width: 100vw;
+    }
+    #day1, #day2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    #day1 li, #day2 li{
+        margin: 0px 12px;
+    }
+    .e-adjust{
+        background-color: black;
+        transform: none;
+        padding-top: 0px;
+        height: auto;
+        width: 100vw;
+    }
+    .e-adjust:hover {
+        transform: none;
+    }
 
 
     /* Sponsors */
     .spon-head{
         font-size: 1.5rem;
     }
-    /* .spon-logos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: bisque;
-        justify-content: space-around;
-    } */
     .spon-items {
         padding: 10px;
+    }
+    .spon-items {
+        margin: 10px;
     }
 }
