@@ -40,7 +40,7 @@ const intvl = setInterval(() => {
 
     // Display result
     countdown.innerHTML = `
-  <div>${days}<span>&nbsp&nbspDays&nbsp&nbsp</span></div> 
+  <div>${days}<span>&nbsp&nbspDays&nbsp&nbsp</span></div>
   <div>${hours}<span>&nbspHours&nbsp</span></div>
   <div>${mins}<span>Minutes</span></div>
   <div>${seconds}<span>Seconds</span></div>
@@ -91,57 +91,57 @@ $("#ev1").click( function() {
 $("#ev2").click(function () {
     $(".E2").removeClass("q");
     $(".E1, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 $("#ev3").click(function () {
     $(".E3").removeClass("q");
     $(".E1, .E2, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 $("#ev4").click(function () {
     $(".E4").removeClass("q");
     $(".E1, .E2, .E3, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 $("#ev5").click(function () {
     $(".E5").removeClass("q");
     $(".E1, .E2, .E3, .E4, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 $("#ev6").click(function () {
     $(".E6").removeClass("q");
     $(".E1, .E2, .E3, .E4, .E5, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 $("#ev7").click(function () {
     $(".E7").removeClass("q");
     $(".E1, .E2, .E3, .E4, .E5, .E6, .E8, .E9, .E10, .E11, .E12").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 $("#ev8").click(function () {
     $(".E8").removeClass("q");
     $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E9, .E10, .E11, .E12").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 $("#ev9").click(function () {
     $(".E9").removeClass("q");
     $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E10, .E11, .E12").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 $("#ev10").click(function () {
     $(".E10").removeClass("q");
     $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E11, .E12").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 $("#ev11").click(function () {
     $(".E11").removeClass("q");
     $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E12").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 $("#ev12").click(function () {
     $(".E12").removeClass("q");
     $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11").addClass("q");
-    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");    
+    $(".EE1, .EE2, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
 });
 
 // Day 2
@@ -153,7 +153,7 @@ $("#eev1").click(function () {
 $("#eev2").click(function () {
     $(".EE2").removeClass("q");
     $(".EE1, .EE3, .EE4, .EE5, .EE6, .EE7, .EE8, .EE9, .EE10, .EE11, .EE12").addClass("q");
-    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");    
+    $(".E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8, .E9, .E10, .E11, .E12").addClass("q");
 });
 $("#eev3").click(function () {
     $(".EE3").removeClass("q");

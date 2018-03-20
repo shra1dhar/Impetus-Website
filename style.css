@@ -8,6 +8,10 @@ body {
 a:link{
     text-decoration: none;
 }
+.EPSILON{
+    background-color: rgba(2, 2, 2, 0.966);
+    color: rgb(255, 255, 255);
+}
 .animated {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
@@ -226,7 +230,21 @@ a:link{
     }
     100% {
         transform: translateY(0vh);
-        color: bisque
+        color: bisque;
+    }
+}
+@keyframes reach-text-anim {
+    0% {
+        transform: translateY(40vh);
+        color: rgb(5, 36, 71);
+    }
+    99% {
+        color: rgb(5, 36, 71);
+    }
+    100% {
+        transform: translateY(0vh);
+        background-color: bisque;
+        color: rgb(5, 36, 71);
     }
 }
 @keyframes bg-color {
@@ -472,7 +490,7 @@ h1{
     z-index: 6;
 }
 .about{
-    display: none;
+    /* display: none; */
     overflow: hidden;
 }
 
@@ -485,6 +503,8 @@ h1{
     padding: 40px;
     background-color:bisque;
     word-spacing: 0.7rem;
+    animation: reach-text-anim 1.2s ease-out 1s;
+    animation-fill-mode: both;
 }
 .white{
     margin-top: 50px;
@@ -492,6 +512,8 @@ h1{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    animation: smooth-effect 1.5s linear 2.2s;
+    animation-fill-mode: both;
 }
 .map{
     box-sizing: border-box;
